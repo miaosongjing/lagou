@@ -1,0 +1,1079 @@
+body {
+    -webkit-user-select: none;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    position: relative;
+}
+
+.header {
+    min-width: 1024px;
+    height: 30px;
+    background-color: #333;
+    font-size: 14px;
+}
+
+.header .left {
+    float: left;
+    margin: 7px 0 0 20px;
+}
+
+.header a {
+    display: block;
+    float: left;
+    color: #c4c3c3;
+    line-height: 16px;
+}
+
+.header .left a {
+    padding: 0 12px;
+}
+
+.header .left .left_1 {
+    padding-left: 20px;
+    background: url("img/1.png") no-repeat;
+    color: #08d7a2;
+    border-right: 1px solid #5d5d5d;
+}
+
+.header .left .left_1:hover {
+    color: #05eaaf;
+}
+
+.header .right {
+    float: right;
+    margin: 7px 30px 0 0;
+}
+
+.header .right a {
+    width: 52px;
+    height: 16px;
+    text-align: center;
+}
+
+.header .right .right_1 {
+    border-right: 1px solid #5d5d5d;
+}
+
+.header .right .right_1:hover, .header .right .right_2:hover, .header .left .left_2:hover {
+    color: #ffffff;
+}
+
+.nav {
+    width: 100%;
+    min-width: 1024px;
+    height: 54px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fafafa;
+}
+
+.nav .inner {
+    width: 1024px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.nav .inner h1 {
+    float: left;
+}
+
+.nav .inner h1 a {
+    display: block;
+    margin: 10px 0 0;
+    width: 97px;
+    height: 34px;
+    background: url("img/2.png");
+}
+
+.nav .inner .city {
+    width: 120px;
+    height: 54px;
+    float: left;
+    padding-left: 12px;
+}
+
+.nav .inner .city .select {
+    float: left;
+    display: block;
+    line-height: 60px;
+    font-size: 18px;
+    margin-right: 9px;
+}
+
+.nav .inner .city .selectAll {
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 64px;
+}
+
+.nav .inner ul {
+    float: left;
+    margin-left: 30px;
+    height: 54px;
+}
+
+.nav .inner ul li {
+    margin: 0 16px;
+    float: left;
+}
+
+.nav .inner ul li a {
+    display: block;
+    height: 53px;
+    line-height: 53px;
+    font-size: 18px;
+    padding: 0 5px;
+    border-bottom: 2px solid transparent;
+    color: #999;
+}
+
+.nav .inner ul li .first {
+    border-bottom: 2px solid #00b38a;
+    color: black;
+}
+
+.nav .inner ul li .second:hover, .nav .inner ul li .third:hover {
+    border-bottom: 2px solid #00b38a;
+    color: black;
+}
+
+.pop-up {
+    display: none;
+    border-top: 1px solid transparent;
+    min-width: 1024px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 5000px;
+    background: rgba(40, 40, 40, 0.3);
+}
+
+.pop-up .outer {
+    width: 590px;
+    height: 400px;
+    padding: 14px;
+    background: rgba(40, 40, 40, 0.7);
+    position: absolute;
+}
+
+.pop-up .outer ._inner {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.pop-up .outer .title {
+    width: 100%;
+    height: 44px;
+    font-size: 18px;
+    color: #fff;
+    background: #00b38a;
+}
+
+.pop-up .outer .title h3 {
+    float: left;
+    font-weight: normal;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 18px;
+}
+
+.pop-up .outer .title button {
+    float: right;
+    background: url(img/3.png) no-repeat;
+    width: 19px;
+    height: 19px;
+    margin: 12px 12px 0 0;
+    cursor: pointer;
+}
+
+.pop-up .outer .inner {
+    padding: 22px 40px;
+    background-color: #fff;
+}
+
+.pop-up .outer .inner strong {
+    font-size: 16px;
+    color: #555;
+    line-height: 42px;
+}
+
+.pop-up .outer .inner p {
+    font-size: 16px;
+    color: #555;
+    line-height: 42px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.pop-up .outer .inner .check {
+    height: 52px;
+    padding: 26px 0 14px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.pop-up .outer .inner .check a {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #00b38a;
+    color: #555;
+    width: 98px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.pop-up .outer .inner .cities {
+    padding: 0 24px;
+    overflow: hidden;
+}
+
+.pop-up .outer .inner .cities ul {
+    width: 400px;
+}
+
+.pop-up .outer .inner .cities li a {
+    font-size: 16px;
+    float: left;
+    width: 100px;
+    height: 50px;
+    color: #999;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #dce4e6;
+    border-radius: 1px;
+    margin: 18px 30px 18px 0;
+}
+
+.pop-up .outer .inner .cities li a:hover {
+    color: #555;
+    width: 98px;
+    height: 48px;
+    line-height: 48px;
+    border: 2px solid #00b38a;
+}
+
+.pop-up .outer .inner span {
+    color: #777;
+    font-size: 14px;
+}
+
+.pop-up .outer .cover {
+    width: 100%;
+    height: 100%;
+    background: #fff url(img/4.gif) no-repeat center center;
+}
+
+.content {
+    width: 1024px;
+    margin: 35px auto 0;
+}
+
+.content .left {
+    width: 230px;
+    z-index: 100;
+    float: left;
+    position: relative;
+    background-color: #fafafa;
+    height: 800px;
+}
+
+.content .left a {
+    color: #555;
+}
+
+.content .left ul a:hover, .content .left .detail dl dd a:hover {
+    color: #00b38a;
+    text-decoration: underline;
+}
+
+.content .left ul {
+    position: relative;
+    width: 100%;
+}
+
+.content .left ul:hover .menu {
+    background-color: #fff;
+    border: 2px solid #c9cbce;
+    border-right: 0;
+    z-index: 200;
+}
+
+.content .left ul:hover .detail {
+    display: block;
+    z-index: 199;
+}
+
+.content .left .menu {
+    padding: 6px 12px;
+    border: 2px solid #fafafa;
+    border-right: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 22px;
+    z-index: 100;
+}
+
+.content .left .menu h3 {
+    font-size: 18px;
+    padding: 10px 0 10px 8px;
+    font-weight: 500;
+}
+
+.content .left .menu h3 span {
+    width: 13px;
+    height: 14px;
+    float: right;
+    margin-top: 4px;
+    background: url(img/5.png) 0 0 no-repeat;
+}
+
+.content .left .menu a {
+    float: left;
+    white-space: nowrap;
+    margin: 0 5px 5px 0;
+    padding: 0 8px;
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.content .left .book {
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    background: #fafafa;
+    padding: 0 0 0 20px;
+    border-bottom: 2px solid #00b38a;
+    border-top: 12px solid #fff;
+}
+
+.content .left .book a {
+    float: left;
+    margin-bottom: -32px;
+    width: 210px;
+    color: #555;
+}
+
+.content .left .book a span {
+    float: right;
+    margin: 14px 20px 0 0;
+    width: 21px;
+    height: 21px;
+    background: url(img/6.png) 0 -19px no-repeat;
+}
+
+.content .left .detail {
+    display: none;
+    width: 540px;
+    padding: 15px 30px 5px;
+    position: absolute;
+    top: 0;
+    left: 228px;
+    z-index: 99;
+    border: 2px solid #c9cbce;
+    background: #fff;
+
+}
+
+.content .left .detail dl {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.content .left .detail dl dt {
+    width: 70px;
+    line-height: 28px;
+    text-align: right;
+    position: absolute;
+    text-decoration: underline;
+}
+
+.content .left .detail dl dd {
+    margin-left: 100px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.content .left .detail dl dd a {
+    float: left;
+    padding: 0 10px;
+    background: url(img/5.png) -29px center no-repeat;
+    line-height: 28px;
+}
+
+.content .left .detail dl dd a.first {
+    background: none;
+}
+
+.content .left .detail dl dd a.change {
+    color: #00b38a
+}
+
+.content .right {
+    float: right;
+    width: 744px;
+}
+
+.content .right .search .searcher {
+    width: 570px;
+    height: 23px;
+    line-height: 23px;
+    float: left;
+    font-size: 16px;
+    padding: 5px 8px 5px 10px;
+    border: 2px solid #00b38a;
+}
+
+.content .right .search .button {
+    height: 37px;
+    width: 152px;
+    color: #FFF;
+    font-size: 18px;
+    border: 2px solid #00b38a;
+    background: #00b38a;
+    float: right;
+    cursor: pointer;
+}
+
+.content .right dl {
+    overflow: hidden;
+    margin: 6px 0 18px;
+}
+
+.content .right dl a {
+    color: #555;
+    font-size: 14px;
+}
+
+.content .right .hotSearch dt {
+    float: left;
+    width: 70px;
+}
+
+.content .right .hotSearch dd {
+    margin-right: 20px;
+    float: left;
+}
+
+.content .right .hotSearch dd a.color {
+    color: #00b38a;
+}
+
+.content .right .banner {
+    position: relative;
+    width: 744px;
+    height: 160px;
+    margin: 0 0 18px;
+    overflow: hidden;
+}
+
+.content .right .banner a {
+    display: block;
+}
+
+.content .right .banner .bannerleft {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.content .right .banner .bannerright {
+    float: right;
+    position: relative;
+    width: 121px;
+    height: 160px;
+    right: 0;
+    top: 0;
+}
+
+.content .right .banner .bannerright ul {
+    position: relative;
+}
+
+.content .right .banner .bannerright li {
+    width: 113px;
+    height: 42px;
+    border: 4px solid #d3d3d3;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.content .right .banner .bannerright strong {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -6px;
+    width: 127px;
+    height: 50px;
+    background: url("img/banner7.png") no-repeat;
+}
+
+.content .right .banner .bannerright i {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: url("img/banner8.png") no-repeat;
+    width: 118px;
+    height: 42px;
+}
+
+.content .right .sleek {
+    height: 118px;
+    margin: 0 0 25px;
+    overflow: hidden;
+}
+
+.content .right .sleek img {
+    width: 113px;
+    height: 113px;
+}
+
+.content .right .sleek a, .content .right .sleek img {
+    display: block;
+}
+
+.content .right .sleek ul {
+    overflow: hidden;
+    width: 780px;
+}
+
+.content .right .sleek ul li {
+    float: left;
+    margin-right: 8px;
+    background: #fff;
+    position: relative;
+    border: 2px solid #fafafa;
+    overflow: hidden;
+}
+
+.content .right .sleek ul li div {
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    background: rgba(0, 179, 138, .9);
+}
+
+.content .right .sleek ul li div h2 {
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 10px 8px 8px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.content .right .sleek ul li div em {
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: rgba(255, 255, 255, .3);
+    background: #fff filter : alpha(opacity = 30);
+    margin: 0 6px;
+}
+
+.content .right .sleek ul li div p {
+    font-size: 12px;
+    margin: 6px 8px;
+    line-height: 18px;
+    color: #fafafa;
+}
+
+.content .right .job {
+    background: #f6f6f6;
+    overflow: hidden;
+}
+
+.content .right .job li {
+    float: left;
+    color: #999;
+    cursor: pointer;
+    padding: 7px 20px;
+    font-size: 18px;
+    border-top: 3px solid transparent;
+}
+
+.content .right .job li.current {
+    border-top: 3px solid #00b38a;
+    background: #fff;
+    color: #333;
+}
+
+.content .right .checkjob ul li {
+    width: 744px;
+    overflow: hidden;
+    border-bottom: 1px dashed #e1e1e1;
+}
+
+.content .right .checkjob ul li ._left {
+    float: left;
+    width: 435px;
+    height: 100%;
+}
+
+.content .right .checkjob ul li ._left a {
+    display: block;
+    height: 34px;
+    color: #00b38a;
+    max-width: 256px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 22px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.content .right .checkjob ul li ._left .middle {
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.content .right .checkjob ul li ._left .middle .much {
+    float: left;
+    display: block;
+    font-size: 16px;
+    color: #fa6041;
+    margin-right: 20px;
+}
+
+.content .right .checkjob ul li ._left .middle ._detail {
+    float: left;
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+
+.content .right .checkjob ul li ._left .leftbt {
+    height: 47px;
+    line-height: 47px;
+    padding-left: 15px;
+    padding-right: 20px;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+.content .right .checkjob ul li ._right {
+    float: right;
+    width: 309px;
+}
+
+.content .right .checkjob ul li ._right a {
+    font-size: 16px;
+    display: block;
+    height: 34px;
+    color: #00b38a;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 22px;
+}
+
+.content .right .checkjob ul li ._right .rmiddle {
+    font-size: 14px;
+    color: #333;
+}
+
+.content .right .checkjob ul li ._right .rightbt {
+    height: 47px;
+    background-color: #fafafa;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.content .right .checkjob ul li ._right .rightbt span {
+    float: left;
+    border: 1px solid #dcdcdc;
+    margin-top: 14px;
+    padding: 1px 4px;
+}
+
+.content .right .checkjob .more {
+    float: right;
+    font-size: 16px;
+    color: #fff;
+    background: #00b38a url("img/lg000.png") 88px center no-repeat;
+    padding: 5px 40px 5px 15px;
+    margin: 10px 0 0;
+    margin-top: 25px;
+}
+
+.content .right .checkjob .more:hover {
+    background-color: #00a57f;
+}
+
+.content .right .checkjob .newest {
+
+    display: none;
+}
+
+.content .right .checkjob .newest i {
+    float: right;
+    width: 68px;
+    height: 28px;
+    margin-left: 10px;
+    background-image: url("img/jobup.png");
+    overflow: hidden;
+}
+
+.content .right .linkbox {
+    padding: 15px 0 0;
+    margin-top: 40px;
+    border-top: 1px solid #ececed;
+    overflow: hidden;
+}
+
+.content .right .linkbox dt {
+    float: left;
+    width: 70px;
+    height: 185px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.content .right .linkbox dd {
+    float: left;
+    white-space: nowrap;
+}
+
+.content .right .linkbox dl dd a {
+    float: left;
+    height: 15px;
+    padding: 8px 9px;
+    line-height: 15px;
+    color: #555;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.content .right .linkbox dl dd span {
+    margin-top: 6px;
+    float: left;
+    font-size: 12px;
+    color: #555;
+}
+
+.content .right .linkbox dl dd ._more {
+    text-decoration: underline;
+}
+
+.content .right .linkbox a:hover {
+    color: #0061a6;
+    text-decoration: underline;
+}
+
+.fire {
+    display: none;
+    background: url("img/fire.png") left top no-repeat;
+    width: 28px;
+    height: 64px;
+    position: fixed;
+    right: 114px;
+    bottom: 140px;
+    cursor: pointer;
+}
+
+.fire:hover {
+    background-position: right top;
+}
+
+.fback {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 102px;
+    bottom: 84px;
+}
+
+.fback .fbicon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("img/faceback.png") left center no-repeat;
+    background-position: 0 0;
+}
+
+.fback .fbicon:hover {
+    background-position: 0 -31px;
+}
+
+.fback span {
+    font-size: 12px;
+    color: #555;
+}
+
+.fback .feedback {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: -190px;
+    left: -324px;
+    width: 380px;
+    height: 240px;
+    background-color: #fefef2;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    box-shadow: 2px 4px 7px #ecebeb;
+    -webkit-box-shadow: 2px 4px 7px #ecebeb;
+}
+
+.fback .feedback textarea {
+    margin: 40px 15px 0 12px;
+    width: 332px;
+    font-size: 13px;
+    font-weight: bold;
+
+    height: 114px;
+    outline: none;
+
+    padding: 5px 11px;
+    border: 1px solid #f1f3e9;
+}
+
+.fback .feedback input {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    width: 260px;
+    height: 37px;
+    margin-left: 12px;
+    margin-top: 8px;
+    padding: 0 11px;
+    border: 1px solid #f1f3e9;
+}
+
+.fback .feedback textarea:focus, .fback .feedback input:focus {
+    border-color: #00b38a;;
+}
+
+.fback .feedback button {
+    float: right;
+    width: 65px;
+    height: 37px;
+    margin: 9px 11px 0 0;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 5px;
+    background-color: #00b88d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.fback .feedback i {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    background: url("img/close1.png") no-repeat;
+}
+
+.footer .fixed {
+    min-width: 1024px;
+    width: 100%;
+    height: 64px;
+}
+
+.footer .footlogo {
+    position: fixed;
+    bottom: 0;
+    z-index: 300;
+    width: 100%;
+    height: 64px;
+    margin: 0 auto;
+    background: url("img/foot0.png") repeat-x;
+}
+
+.footer .footlogo i {
+    width: 95px;
+    height: 54px;
+    background: url("img/foot00.png") no-repeat;
+    position: absolute;
+    top: -54px;
+    left: 50px;
+}
+
+.footer .footlogo .logo1 {
+    width: 138px;
+    height: 45px;
+    background: url("img/foot1.png");
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+.footer .footlogo .company {
+    font-size: 32px;
+    line-height: 38px;
+    color: #dafaf4;
+    float: left;
+    height: 30px;
+    background: url("img/foot000.png") right 16px no-repeat;
+    padding-right: 33px;
+    margin: 20px 0 0 456px;
+}
+
+.footer .footlogo .position {
+    font-size: 32px;
+    line-height: 38px;
+    color: #dafaf4;
+    float: left;
+    height: 30px;
+    background: url("img/foot000.png") right bottom no-repeat;
+    padding-right: 33px;
+    margin: 20px 0 0 78px;
+}
+
+.footer .footlogo .load {
+    text-align: center;
+    background: url("img/foot13.png") repeat-x;
+    position: absolute;
+    left: 945px;
+    top: 0;
+    width: 140px;
+    height: 64px;
+}
+
+.footer .footlogo .load:hover {
+    background: url("img/foot11.png") repeat-x;
+}
+
+.footer .footlogo .load span {
+    display: inline-block;
+    width: 50px;
+    height: 64px;
+    background: url("img/foot4.png") no-repeat left center;
+}
+
+.footer .footlogo .sign {
+    float: right;
+    text-align: center;
+    background: url("img/foot7.png") repeat-x;
+    position: absolute;
+    left: 1085px;
+    top: 0;
+    width: 263px;
+    height: 64px;
+    line-height: 64px;
+
+}
+
+.footer .footlogo .sign:hover {
+    background: url("img/foot12.png") repeat-x;
+}
+
+.footer .footlogo .sign span {
+    display: inline-block;
+    width: 120px;
+    height: 64px;
+    background: url("img/foot6.png") no-repeat left center;
+}
+
+.footer ._footer {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer ._footer i {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    display: block;
+    width: 198px;
+    height: 19px;
+    background: url("img/foot20.png") 0 0 no-repeat;
+}
+
+.footer ._footer ul {
+    padding-top: 12px;
+    float: right;
+    height: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+}
+
+.footer ._footer ul li {
+    margin-right: 15px;
+    float: left;
+    position: relative;
+}
+
+.footer ._footer ul li a {
+    float: left;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer ._footer ul li a span {
+    position: absolute;
+    left: 54px;
+    top: -2px;
+    display: block;
+    background: url("img/foot22.png") no-repeat;
+    width: 30px;
+    height: 16px;
+    margin-left: 3px;
+    vertical-align: text-top;
+    overflow: hidden;
+}
+
+.footer ._footer ul li.first {
+    padding-right: 28px;
+}
+
+.footer ._footer ul li .tel {
+    float: left;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer ._footer ul li .tel em {
+    font-size: 13px;
+    font-style: normal;
+}
+
+.footer ._footer .copyright {
+    clear: both;
+    height: 12px;
+    margin: 0 auto;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    color: #d5d5d5;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.footer ._footer .copyright a {
+    font-size: 12px;
+    color: #d5d5d5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
